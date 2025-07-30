@@ -12,4 +12,4 @@ Bienvenido a mi portafolio de proyectos en inteligencia artificial aplicada al s
 ## 🌐 Sitio web
 
 > También puedes visitar la versión visual del portafolio en:  
-> 👉 [https://jdcaballeroco.github.io/portafolio-industrial-ia](https://jdcaballeroco.github.io/portafolio-industrial-ia)
+> 👉 [https://jdcaballeroco.github.io/portafolio-industrial-ia](https://jdcaballeroco.github.io/)
