@@ -2,7 +2,7 @@
 
 ## 1. Purpose
 
-This document defines how any coding agent working in this repository must:
+This document defines how any coding agent working in this repository must: 
 
 - understand the project goals
 - inspect the current structure before changing code

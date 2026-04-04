@@ -1,0 +1,4 @@
+# Ignore the .env file which may contain sensitive information
+.env
+# Ignore the AGENTS.md file which may contain sensitive information about agents
+AGENTS.md
