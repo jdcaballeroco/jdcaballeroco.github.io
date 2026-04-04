@@ -151,6 +151,7 @@ ul {
 }
 
 .nav-wrap {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -195,6 +196,13 @@ ul {
   gap: 1.25rem;
 }
 
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
 .site-nav a {
   text-decoration: none;
   color: var(--muted);
@@ -204,6 +212,39 @@ ul {
 .site-nav a:hover,
 .site-nav a.is-active {
   color: var(--heading);
+}
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.035);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.language-option {
+  min-width: 2.5rem;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 0.45rem 0.72rem;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+}
+
+.language-option.is-active,
+.language-option[aria-pressed="true"] {
+  color: #03101d;
+  background: linear-gradient(135deg, rgba(97, 211, 255, 0.96), rgba(139, 240, 214, 0.9));
+  box-shadow: 0 10px 22px rgba(97, 211, 255, 0.18);
 }
 
 .nav-toggle {
@@ -224,12 +265,30 @@ ul {
 .hero {
   position: relative;
   display: flex;
-  align-items: center;
   padding: clamp(1.5rem, 3vh, 2.5rem) 0 clamp(2.25rem, 5vh, 4rem);
-  min-height: calc(100vh - 78px);
-  min-height: calc(100svh - 78px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   overflow: clip;
+}
+
+.hero.hero--fit {
+  align-items: center;
+  min-height: calc(100vh - var(--header-height, 78px));
+  min-height: calc(100svh - var(--header-height, 78px));
+}
+
+.hero.hero--fit .hero-grid {
+  align-items: center;
+}
+
+.hero.hero--auto {
+  align-items: flex-start;
+  min-height: auto;
+  padding-top: clamp(2rem, 4vh, 3rem);
+  padding-bottom: clamp(2.4rem, 5vh, 4rem);
+}
+
+.hero.hero--auto .hero-grid {
+  align-items: start;
 }
 
 .hero::before {
@@ -673,6 +732,10 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .header-controls {
+    gap: 0.75rem;
+  }
+
   .site-nav {
     position: absolute;
     top: calc(100% + 0.5rem);
@@ -697,6 +760,11 @@ button:focus-visible {
     display: block;
   }
 
+  .language-option {
+    min-width: 2.35rem;
+    padding: 0.42rem 0.62rem;
+  }
+
   .hero {
     min-height: auto;
     padding: 2rem 0 3rem;
@@ -718,6 +786,24 @@ button:focus-visible {
 }
 
 @media (max-width: 720px) {
+  .nav-wrap {
+    gap: 0.8rem;
+  }
+
+  .header-controls {
+    gap: 0.65rem;
+  }
+
+  .language-switcher {
+    padding: 0.18rem;
+  }
+
+  .language-option {
+    min-width: 2.2rem;
+    padding: 0.38rem 0.55rem;
+    font-size: 0.74rem;
+  }
+
   .brand-mark {
     height: 34px;
     max-width: 64px;

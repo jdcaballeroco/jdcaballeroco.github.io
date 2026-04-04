@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jesús Caballero | Industrial AI Engineer</title>
-  <meta name="description" content="Industrial AI Engineer focused on edge ML systems, predictive maintenance, industrial analytics, and OT-aware deployment for real operational environments.">
-  <meta name="keywords" content="Industrial AI Engineer, Edge ML, Predictive Maintenance, Industrial Analytics, Oil and Gas, FastAPI, Docker, LangGraph, Time Series, Anomaly Detection">
+  <title id="page-title">Jesús Caballero | Industrial AI Engineer</title>
+  <meta id="meta-description" name="description" content="Industrial AI Engineer focused on edge ML systems, predictive maintenance, industrial analytics, and OT-aware deployment for real operational environments.">
+  <meta id="meta-keywords" name="keywords" content="Industrial AI Engineer, Edge ML, Predictive Maintenance, Industrial Analytics, Oil and Gas, FastAPI, Docker, LangGraph, Time Series, Anomaly Detection">
   <meta name="theme-color" content="#08111f">
-  <meta property="og:title" content="Jesús Caballero | Industrial AI Engineer">
-  <meta property="og:description" content="Industrial AI Engineer building edge-ready ML systems for predictive maintenance, industrial analytics, and OT-aware production environments.">
+  <meta id="meta-og-title" property="og:title" content="Jesús Caballero | Industrial AI Engineer">
+  <meta id="meta-og-description" property="og:description" content="Industrial AI Engineer building edge-ready ML systems for predictive maintenance, industrial analytics, and OT-aware production environments.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jdcaballeroco.github.io/">
   <meta property="og:image" content="https://jdcaballeroco.github.io/assets/icons/favicon.ico">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Jesús Caballero | Industrial AI Engineer">
-  <meta name="twitter:description" content="Industrial AI Engineer building edge-ready ML systems for predictive maintenance and industrial analytics.">
+  <meta id="meta-twitter-title" name="twitter:title" content="Jesús Caballero | Industrial AI Engineer">
+  <meta id="meta-twitter-description" name="twitter:description" content="Industrial AI Engineer building edge-ready ML systems for predictive maintenance and industrial analytics.">
   <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,26 +66,33 @@
           </span>
         </a>
 
+        <div class="header-controls">
+          <nav class="site-nav" id="site-nav" aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="language-switcher" role="group" aria-label="Language selector">
+            <button class="language-option" type="button" data-language="en" aria-pressed="true">EN</button>
+            <button class="language-option" type="button" data-language="es" aria-pressed="false">ES</button>
+          </div>
+        </div>
+
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
           <span></span>
           <span></span>
           <span></span>
           <span class="sr-only">Toggle navigation</span>
         </button>
-
-        <nav class="site-nav" id="site-nav" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
-          <a href="#project">Project</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-        </nav>
       </div>
     </header>
 
     <main id="main-content">
-      <section class="hero section" id="top">
+      <section class="hero section hero--fit" id="top">
         <div class="container hero-grid">
           <div class="hero-copy" data-reveal>
             <p class="eyebrow">Industrial AI • Edge ML • Predictive Maintenance</p>
@@ -511,6 +518,7 @@
     </footer>
   </div>
 
+  <script src="./content/translations.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>
