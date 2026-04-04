@@ -13,7 +13,8 @@ assets/
     CV_JesusCaballero_EN.pdf
     CV_JesusCaballero_ES.pdf
   icons/
-    favicon.svg
+    favicon.png
+  imgs/
 docs/
   index.html
 proyectos/

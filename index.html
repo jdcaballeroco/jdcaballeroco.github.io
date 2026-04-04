@@ -11,11 +11,11 @@
   <meta property="og:description" content="Industrial AI Engineer building edge-ready ML systems for predictive maintenance, industrial analytics, and OT-aware production environments.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jdcaballeroco.github.io/">
-  <meta property="og:image" content="https://jdcaballeroco.github.io/assets/icons/favicon.svg">
+  <meta property="og:image" content="https://jdcaballeroco.github.io/assets/icons/favicon.ico">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Jesús Caballero | Industrial AI Engineer">
   <meta name="twitter:description" content="Industrial AI Engineer building edge-ready ML systems for predictive maintenance and industrial analytics.">
-  <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -56,10 +56,10 @@
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <div class="site-shell">
-    <header class="site-header" id="top">
+    <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="#top" aria-label="Jesús Caballero home">
-          <span class="brand-mark">JC</span>
+          <img src="./assets/imgs/mark.png" alt="Jesús Caballero logo" class="brand-mark">
           <span class="brand-text">
             <strong>Jesús Caballero</strong>
             <span>Industrial AI Engineer</span>
@@ -85,7 +85,7 @@
     </header>
 
     <main id="main-content">
-      <section class="hero section">
+      <section class="hero section" id="top">
         <div class="container hero-grid">
           <div class="hero-copy" data-reveal>
             <p class="eyebrow">Industrial AI • Edge ML • Predictive Maintenance</p>
@@ -301,35 +301,70 @@
           <div class="project-card" data-reveal>
             <div class="project-copy">
               <p class="eyebrow">Featured Project</p>
-              <h2>AI Dataset Reasoning Agent</h2>
-              <p>
-                A public-facing project built around industrial dataset reasoning with LangGraph. The goal is to
-                make early-stage dataset work more structured by guiding preprocessing, feature engineering, and
-                baseline modeling for technical analysis workflows.
+              <h2>Industrial Dataset Readiness Platform</h2>
+              <p class="project-summary">
+                Deterministic, run-based dataset analysis and baseline modeling for industrial and technical tabular workflows.
               </p>
-              <ul class="project-points">
-                <li><strong>Problem:</strong> industrial datasets often require repetitive preprocessing and structured technical exploration before modeling becomes useful.</li>
-                <li><strong>What it does:</strong> supports reasoning over datasets with a workflow that emphasizes data preparation, baseline analysis, and interpretable next steps.</li>
-                <li><strong>Why it matters:</strong> it reflects a practical view of AI systems where deterministic preparation and engineering judgment are as important as model choice.</li>
-              </ul>
+              <p>
+                This project is designed as a structured analytical system rather than a generic AI chatbot. It combines
+                a Python analysis engine, a FastAPI backend, and a lightweight interface to run traceable diagnostics,
+                readiness checks, and baseline modeling flows with explicit outputs.
+              </p>
+              <div class="project-detail-grid">
+                <article class="project-detail">
+                  <h3>Problem</h3>
+                  <p>
+                    Early-stage work on industrial datasets is often notebook-heavy, inconsistent, and weakly documented,
+                    especially when data quality, time structure, leakage risk, or modeling readiness are unclear.
+                  </p>
+                </article>
+                <article class="project-detail">
+                  <h3>Approach</h3>
+                  <p>
+                    Uses deterministic analysis modes, readiness gating, and run-scoped artifacts so each execution
+                    produces structured outputs instead of ad hoc exploration. A constrained conversational layer sits
+                    on top of the analytical core instead of replacing it.
+                  </p>
+                </article>
+                <article class="project-detail">
+                  <h3>Technical Value</h3>
+                  <p>
+                    The system emphasizes explicit execution semantics, reproducible run history, artifact-driven
+                    workflows, and practical backend/frontend integration for explainable ML analysis.
+                  </p>
+                </article>
+              </div>
             </div>
 
             <div class="project-side">
               <div class="stack-card">
+                <p class="stack-title">Technical framing</p>
+                <ul class="project-facets">
+                  <li>Deterministic dataset analysis platform</li>
+                  <li>Run-based ML workflow system</li>
+                  <li>Artifact-driven analytical execution</li>
+                  <li>Industrial and time-series dataset bias</li>
+                </ul>
+              </div>
+
+              <div class="stack-card">
                 <p class="stack-title">Technical stack</p>
                 <div class="pill-row">
-                  <span>LangGraph</span>
                   <span>Python</span>
-                  <span>Data preprocessing</span>
-                  <span>Feature engineering</span>
+                  <span>FastAPI</span>
+                  <span>Vanilla JS</span>
+                  <span>Run-scoped artifacts</span>
                   <span>Baseline modeling</span>
+                  <span>Readiness gating</span>
+                  <span>Optional LLM / RAG layers</span>
                 </div>
               </div>
 
               <div class="placeholder-card">
-                <p>Public documentation coming soon.</p>
-                <p>Public demo coming soon.</p>
-                <p>No public repository link is shown until publishable material is ready.</p>
+                <p class="stack-title">Current public status</p>
+                <p>Public documentation is being prepared.</p>
+                <p>Public demo is not published yet.</p>
+                <p>No public repository link is shown until the publishable package is ready.</p>
               </div>
             </div>
           </div>
@@ -449,18 +484,21 @@
 
       <section class="section" id="contact">
         <div class="container contact-card" data-reveal>
-          <div>
+          <div class="contact-copy">
             <p class="eyebrow">Contact</p>
             <h2>Open to technical conversations, engineering opportunities, and collaboration.</h2>
             <p>
               Based in Bogota, Colombia. The fastest way to reach me is by email or LinkedIn.
             </p>
+            <div class="contact-actions">
+              <a class="button button-primary" href="mailto:jesuscaballero0@gmail.com">jesuscaballero0@gmail.com</a>
+              <a class="button button-secondary" href="https://www.linkedin.com/in/jdcaballeroco/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="button button-secondary" href="https://github.com/jdcaballeroco" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
           </div>
-          <div class="contact-actions">
-            <a class="button button-primary" href="mailto:jesuscaballero0@gmail.com">jesuscaballero0@gmail.com</a>
-            <a class="button button-secondary" href="https://www.linkedin.com/in/jdcaballeroco/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="button button-secondary" href="https://github.com/jdcaballeroco" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
+          <figure class="contact-portrait">
+            <img src="./assets/imgs/foto_personal.png" alt="Jesús Caballero portrait">
+          </figure>
         </div>
       </section>
     </main>
