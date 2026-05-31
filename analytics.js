@@ -130,11 +130,54 @@ async function trackVisit() {
     }
 }
 
+async function trackEvent(eventType, eventTarget) {
+    try {
+        await fetch(
+            `${ANALYTICS_API}/event`,
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    visitor_id: getVisitorId(),
+                    event_type: eventType,
+                    event_target: eventTarget
+                })
+            }
+        );
+    } catch (err) {
+        console.error(
+            "Analytics event error",
+            err
+        );
+    }
+}
+
+function setupEventTracking() {
+    document
+        .querySelectorAll("[data-analytics-event]")
+        .forEach((element) => {
+            element.addEventListener("click", () => {
+                const eventType = element.getAttribute("data-analytics-event");
+                const eventTarget = element.getAttribute("data-analytics-target");
+
+                if (!eventType || !eventTarget) {
+                    return;
+                }
+
+                trackEvent(eventType, eventTarget);
+            });
+        });
+}
+
 document.addEventListener(
     "DOMContentLoaded",
     () => {
         if (shouldTrackVisit()) {
             trackVisit();
         }
+
+        setupEventTracking();
     }
 );
