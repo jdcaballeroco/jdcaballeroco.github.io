@@ -1,13 +1,13 @@
 (function () {
   const en = {
     meta: {
-      title: "Jesús Caballero | Industrial AI Engineer",
-      description: "Industrial AI Engineer focused on edge ML systems, predictive maintenance, industrial analytics, and OT-aware deployment for real operational environments.",
-      keywords: "Industrial AI Engineer, Edge ML, Predictive Maintenance, Industrial Analytics, Oil and Gas, FastAPI, Docker, LangGraph, Time Series, Anomaly Detection",
-      ogTitle: "Jesús Caballero | Industrial AI Engineer",
-      ogDescription: "Industrial AI Engineer building edge-ready ML systems for predictive maintenance, industrial analytics, and OT-aware production environments.",
-      twitterTitle: "Jesús Caballero | Industrial AI Engineer",
-      twitterDescription: "Industrial AI Engineer building edge-ready ML systems for predictive maintenance and industrial analytics."
+      title: "Jesús Caballero | Machine Learning Engineer",
+      description: "Machine Learning Engineer focused on production-grade AI/ML systems integrating backend services, data pipelines, ML models, forecasting, anomaly detection, AI agents, RAG, FastAPI, Docker, and edge deployment.",
+      keywords: "Machine Learning Engineer, AI Engineer, ML Systems, AI Applications, FastAPI, Docker, Data Pipelines, Time-Series Forecasting, Anomaly Detection, AI Agents, RAG, Edge Deployment",
+      ogTitle: "Jesús Caballero | Machine Learning Engineer",
+      ogDescription: "Machine Learning Engineer building production-grade AI/ML systems with backend services, data pipelines, ML models, AI agents, and edge deployments.",
+      twitterTitle: "Jesús Caballero | Machine Learning Engineer",
+      twitterDescription: "Machine Learning Engineer focused on ML systems, AI applications, backend services, data pipelines, agents, and edge deployments."
     },
     common: {
       skipLink: "Skip to content",
@@ -16,7 +16,7 @@
     brand: {
       logoAlt: "Jesús Caballero logo",
       name: "Jesús Caballero",
-      role: "Industrial AI Engineer",
+      role: "Machine Learning Engineer",
       homeAriaLabel: "Jesús Caballero home"
     },
     nav: {
@@ -24,198 +24,189 @@
       toggleLabel: "Toggle navigation"
     },
     hero: {
-      eyebrow: "Industrial AI • Edge ML • Predictive Maintenance",
-      title: "Industrial AI systems built for real operational environments.",
-      lead: "I design and deliver edge-ready AI solutions across industrial analytics, predictive monitoring, and OT-aware software systems. My work connects machine learning, backend engineering, and deployment constraints that generic ML portfolios usually ignore.",
+      eyebrow: "ML Systems • AI Applications • Edge Deployment",
+      title: "Production-grade AI/ML systems, from data pipelines to deployed applications.",
+      lead: "I build production-oriented AI/ML systems that integrate backend services, data pipelines, machine learning models, and edge deployment.",
       buttons: {
-        primary: "View featured project",
-        secondary: "Download CV"
+        primary: "View Featured Project",
+        secondary: "Download Resume"
       },
-      links: ["LinkedIn", "GitHub", "Email", "CV ES"],
+      links: ["LinkedIn", "GitHub", "Email", "Resume EN"],
       panel: {
         label: "Positioning",
-        title: "Hybrid profile across AI, industrial systems, edge deployment, and automation.",
+        title: "Machine Learning Engineer focused on deployable AI/ML applications, backend services, and edge deployment.",
         bullets: [
-          "Industrial AI Engineer with end-to-end ownership.",
-          "Predictive monitoring for pumps, compressors, and asset health workflows.",
-          "FastAPI, Docker/Podman, ARM edge deployment, and OT-aware execution.",
-          "LangGraph-based agentic tooling for industrial dataset reasoning."
+          "AI/ML applications integrating data pipelines, models, APIs, and interactive dashboards.",
+          "Time-series analysis, forecasting, anomaly detection, readiness validation, and baseline modeling.",
+          "Backend services with FastAPI, Docker/Podman containers, and ARM-based edge deployment.",
+          "AI agents and local context retrieval for technical and operational dataset analysis."
         ],
         metrics: [
           {
-            title: "Edge ML",
-            description: "ARM-ready, constrained environments, continuous operation"
+            title: "ML Systems",
+            description: "Data pipelines, ML models, artifacts, and reproducible execution"
           },
           {
-            title: "Industrial Analytics",
-            description: "Time series, anomaly detection, health and efficiency metrics"
+            title: "AI Applications",
+            description: "Backend APIs, AI agents, RAG workflows, and dashboards"
           },
           {
-            title: "Technical Leadership",
-            description: "Architecture decisions, mentoring, technical demos"
+            title: "Edge Deployment",
+            description: "Containerized services, ARM targets, and constrained environments"
           }
         ]
       }
     },
     about: {
       eyebrow: "About",
-      title: "Not a generic data scientist, and not only a software engineer.",
+      title: "Machine Learning Engineer focused on production AI/ML systems.",
       paragraphs: [
-        "I’m an Industrial AI Engineer with experience designing machine learning systems for predictive maintenance and industrial asset monitoring, with a strong focus on deployment realities. My work spans model development, backend services, industrial visualization, and edge execution in environments where reliability matters as much as model quality.",
-        "I work comfortably across industrial analytics, backend implementation, OT-aware deployment, embedded systems, and technical decision-making. That combination lets me move from industrial data and modeling logic to production-ready systems that are practical in the field."
+        "I develop production-oriented artificial intelligence and machine learning systems, building end-to-end applications that integrate backend services, data pipelines, ML models, and edge deployment. My experience includes forecasting, anomaly detection, time-series analysis, FastAPI applications, Docker/Podman deployments, AI agents, and local RAG workflows.",
+        "My background in industrial and mechatronics engineering provides practical context for designing systems that operate under real-world constraints involving connectivity, infrastructure, and reliability. My primary focus remains on ML systems, AI applications, and production-oriented deployment."
       ],
       pills: [
-        "Predictive Maintenance",
-        "Industrial Asset Monitoring",
-        "Oil & Gas Environments",
+        "ML Systems",
+        "AI Applications",
+        "Data Pipelines",
         "FastAPI Systems",
         "Docker / Podman",
-        "LangGraph Agents",
-        "ESP32 / Arduino"
+        "AI Agents / RAG",
+        "Edge Deployment"
       ]
     },
     experience: {
       eyebrow: "Experience",
-      title: "Public-safe experience focused on capabilities, architecture, and reliable operation.",
+      title: "Experience building AI/ML applications, backend services, and edge deployments.",
       roles: [
         {
-          role: "Industrial AI / Control Engineer",
+          role: "Data Analytics Engineer",
           company: "Proctek S.A.",
           date: "March 2024 - Present",
-          summary: "Lead the technical design of industrial AI systems for predictive maintenance and asset monitoring in production environments.",
+          summary: "Lead the design and development of AI and machine learning applications for time-series analysis, anomaly detection, forecasting, and production deployment.",
           bullets: [
-            "Build end-to-end applications that combine FastAPI services, machine learning pipelines, industrial dashboards, and edge deployment.",
-            "Design predictive monitoring workflows for pumps and compressors, including anomaly detection, forecasting, and asset health indicators.",
-            "Deploy and adapt solutions for industrial edge targets running under constrained connectivity and operational requirements.",
-            "Support technical decision-making, mentor junior engineers, and participate in technical validation and demonstrations."
+            "Build end-to-end systems integrating FastAPI backend services, data pipelines, machine learning models, and interactive dashboards for monitoring and analytics.",
+            "Implement ML functionalities including health scoring, anomaly detection, multivariate forecasting, and time-series data processing for production-deployed applications.",
+            "Design inference and deployment architectures for Docker/Podman-based AI applications on ARM edge devices with limited-connectivity requirements.",
+            "Define technical architecture decisions, development standards, and deployment strategies for AI/ML applications, while contributing to AI agents that integrate tool orchestration and local context retrieval."
           ]
         },
         {
           role: "Mechatronics Engineer",
           company: "Quynza Technologies",
           date: "March 2022 - January 2024",
-          summary: "Worked at the hardware-software boundary for industrial mechatronic systems, building a strong base in embedded control, HMI design, and practical system integration.",
+          summary: "Worked on hardware-software solutions for automation, data acquisition, embedded systems, and technical training content.",
           bullets: [
-            "Developed embedded solutions with Arduino and ESP32 for control and data acquisition.",
-            "Contributed to industrial HMI interfaces and technical documentation for physical systems.",
-            "Supported hardware-oriented engineering work including PCB-related integration and mechatronic system design."
+            "Developed mechatronic solutions integrating hardware and software for automation and data acquisition systems.",
+            "Programmed embedded systems based on Arduino, ESP32, and MicroPython for IoT and control applications.",
+            "Contributed to technical training courses on IoT, MicroPython, and digital logic, integrating interactive content into the company web platform."
           ]
         }
       ]
     },
     skills: {
       eyebrow: "Skills & Stack",
-      title: "Technical range built around deployment-ready industrial AI.",
+      title: "Technical scope aligned with ML systems, AI backend applications, data, and edge deployment.",
       groups: [
         {
-          title: "AI / ML",
+          title: "Machine Learning & AI",
           items: [
             "scikit-learn",
-            "Time series analysis",
+            "Time-series forecasting",
             "Anomaly detection",
-            "Data pipelines",
             "Feature engineering",
-            "Baseline modeling"
+            "AI agents",
+            "RAG"
           ]
         },
         {
-          title: "Backend",
+          title: "Backend & APIs",
           items: [
-            "Python",
             "FastAPI",
-            "API-oriented architectures",
-            "Operational dashboards",
-            "Technical integration workflows"
+            "REST APIs",
+            "Backend architectures for AI systems",
+            "Backend services",
+            "Application integration"
           ]
         },
         {
-          title: "Edge / Infrastructure",
+          title: "Infrastructure & Deployment",
           items: [
             "Docker",
             "Podman",
-            "ARM deployment",
-            "Constrained environments",
-            "Continuous operation design"
+            "GitHub",
+            "Edge deployment",
+            "x86 / ARM architectures"
           ]
         },
         {
-          title: "Industrial / OT",
+          title: "Data",
           items: [
-            "Predictive maintenance",
-            "Industrial analytics",
-            "Oil & Gas asset monitoring",
-            "PLC knowledge",
-            "SCADA and IIoT exposure"
+            "pandas",
+            "NumPy",
+            "SQLite",
+            "Time-series processing",
+            "Tabular analysis",
+            "Data pipelines"
           ]
         },
         {
-          title: "Embedded / Hardware",
+          title: "Industrial & Edge Systems",
           items: [
+            "IIoT",
+            "ThingWorx",
             "ESP32",
-            "Arduino",
-            "Microcontroller programming",
-            "Control and data acquisition",
-            "Mechatronic integration"
-          ]
-        },
-        {
-          title: "Leadership & Communication",
-          items: [
-            "Technical architecture",
-            "Junior mentoring",
-            "Technical demos",
-            "Solution validation",
-            "Cross-functional collaboration"
+            "PLCNext",
+            "Edge systems"
           ]
         }
       ]
     },
     project: {
-      eyebrow: "Featured Project",
-      title: "Industrial Dataset Readiness Platform",
-      summary: "Deterministic, run-based dataset analysis and baseline modeling for industrial and technical tabular workflows.",
-      description: "This project is designed as a structured analytical system rather than a generic AI chatbot. It combines a Python analysis engine, a FastAPI backend, and a lightweight interface to run traceable diagnostics, readiness checks, and baseline modeling flows with explicit outputs.",
-      details: [
+      eyebrow: "Projects",
+      title: "Selected AI/ML Projects",
+      summary: "Projects focused on forecasting, applied machine learning, and the development of platforms for structured analysis and reproducible ML workflows.",
+      projects: [
         {
-          title: "Problem",
-          text: "Early-stage work on industrial datasets is often notebook-heavy, inconsistent, and weakly documented, especially when data quality, time structure, leakage risk, or modeling readiness are unclear."
+          title: "Predictive Analytics and Energy Forecasting",
+          subtitle: "Forecasting and Energy Data Analysis",
+          description: "Development of predictive models and temporal analysis workflows for energy datasets and electricity tariffs, combining statistical techniques and machine learning to explore patterns, trends, and forecasting capabilities on real-world time-series data.",
+          highlights: [
+            "Forecasting on energy time-series datasets",
+            "Statistical modeling and applied machine learning",
+            "Data preparation, analysis, and evaluation pipelines"
+          ],
+          tags: ["Python", "Forecasting", "Time Series", "SARIMAX", "Prophet"],
+          status: "Applied analytics and modeling project."
         },
         {
-          title: "Approach",
-          text: "Uses deterministic analysis modes, readiness gating, and run-scoped artifacts so each execution produces structured outputs instead of ad hoc exploration. A constrained conversational layer sits on top of the analytical core instead of replacing it."
+          title: "AI-Based Predictive Maintenance System",
+          subtitle: "Machine Learning for Asset Monitoring",
+          description: "Development and evaluation of models for anomaly detection, condition classification, and forecasting using multivariate industrial datasets, exploring both traditional approaches and deep learning architectures for time-series analysis.",
+          highlights: [
+            "Anomaly detection and condition classification",
+            "Analysis of multivariate industrial sensor data",
+            "Evaluation of LSTM, Transformer, and Autoencoder architectures"
+          ],
+          tags: ["Anomaly Detection", "Forecasting", "LSTM", "Transformers", "Autoencoders"],
+          status: "Applied research and development project."
         },
         {
-          title: "Technical Value",
-          text: "The system emphasizes explicit execution semantics, reproducible run history, artifact-driven workflows, and practical backend/frontend integration for explainable ML analysis."
+          title: "ML Analysis and AI Pipeline Execution Platform",
+          subtitle: "ML Dataset Readiness Platform",
+          description: "Platform designed for structured analysis of tabular and time-series datasets, combining readiness validation, feature engineering, and reproducible ML pipeline execution through a FastAPI-based backend architecture.",
+          highlights: [
+            "Readiness validation and feature engineering",
+            "Artifact-based reproducible pipeline execution",
+            "Optional AI Agent and RAG capabilities"
+          ],
+          tags: ["Python", "FastAPI", "ML Pipelines", "RAG", "AI Agents"],
+          status: "Active project under continuous development."
         }
-      ],
-      framingLabel: "Technical framing",
-      framing: [
-        "Deterministic dataset analysis platform",
-        "Run-based ML workflow system",
-        "Artifact-driven analytical execution",
-        "Industrial and time-series dataset bias"
-      ],
-      stackLabel: "Technical stack",
-      stack: [
-        "Python",
-        "FastAPI",
-        "Vanilla JS",
-        "Run-scoped artifacts",
-        "Baseline modeling",
-        "Readiness gating",
-        "Optional LLM / RAG layers"
-      ],
-      statusLabel: "Current public status",
-      status: [
-        "Public documentation is being prepared.",
-        "Public demo is not published yet.",
-        "No public repository link is shown until the publishable package is ready."
       ]
     },
     future: {
       eyebrow: "Future Portfolio",
-      title: "Building the public portfolio progressively and selectively.",
+      title: "Building the public portfolio with publishable AI/ML work.",
       cards: [
         {
           title: "More public projects coming soon",
@@ -223,34 +214,35 @@
         },
         {
           title: "Technical notes in preparation",
-          text: "Planned public material may include architecture notes, edge deployment lessons, and industrial AI workflow writeups."
+          text: "Planned public material may include architecture notes, edge deployment lessons, AI agent workflows, and ML systems writeups."
         },
         {
-          title: "Designed for expansion",
-          text: "The site structure is ready for future project pages, docs links, screenshots, or a lightweight serverless contact flow."
+          title: "Designed for selected additions",
+          text: "The site can later include project pages, documentation links, screenshots, or lightweight contact improvements when public material is ready."
         }
       ]
     },
     education: {
       education: {
         eyebrow: "Education",
-        title: "Academic foundation in automation and mechatronics.",
+        title: "Academic foundation in automation, mechatronics and applied engineering.",
         items: [
           {
             title: "MSc in Industrial Automation Engineering",
-            institution: "National University of Colombia, Bogota",
-            years: "2023 - 2025"
+            institution: "National University of Colombia, Bogotá",
+            years: "2023 - 2025",
+            description: "Master’s thesis focused on predictive analytics and industrial asset modeling using AI/ML software for Oil & Gas applications."
           },
           {
             title: "BSc in Mechatronics Engineering",
-            institution: "National University of Colombia, Bogota",
+            institution: "National University of Colombia, Bogotá",
             years: "2017 - 2022"
           }
         ]
       },
       certifications: {
         eyebrow: "Certifications",
-        title: "Recent certifications aligned with ML and industrial digital systems.",
+        title: "Recent certifications aligned with ML, data science, IoT and applied systems.",
         items: [
           {
             title: "IBM Machine Learning Professional Certificate",
@@ -281,7 +273,7 @@
     },
     honors: {
       eyebrow: "Honors",
-      title: "Academic distinctions presented with restraint and credibility.",
+      title: "Academic distinctions and recognitions.",
       items: [
         {
           title: "National Recognition - Saber Pro Exam",
@@ -299,9 +291,9 @@
     },
     contact: {
       eyebrow: "Contact",
-      title: "Open to technical conversations, engineering opportunities, and collaboration.",
-      text: "Based in Bogota, Colombia. The fastest way to reach me is by email or LinkedIn.",
-      portraitAlt: "Jesús Caballero portrait",
+      title: "Open to opportunities in AI Engineering, Machine Learning Engineering, and backend systems for AI applications.",
+      text: "Based in Bogotá, Colombia. The fastest way to reach me is via email or LinkedIn.",
+      portraitAlt: "Portrait of Jesús Caballero",
       actions: [
         "jesuscaballero0@gmail.com",
         "LinkedIn",
@@ -310,7 +302,7 @@
     },
     footer: {
       name: "Jesús Daniel Caballero Colina",
-      tagline: "Industrial AI Engineer • Edge ML Systems • Predictive Maintenance"
+      tagline: "Machine Learning Engineer • ML Systems • AI Applications • Edge Deployment"
     }
   };
 
@@ -332,13 +324,13 @@
     en,
     es: {
       meta: {
-        title: "Jesús Caballero | Ingeniero de IA Industrial",
-        description: "Ingeniero de IA industrial enfocado en sistemas de ML en el edge, mantenimiento predictivo, analítica industrial y despliegue orientado a entornos OT reales.",
-        keywords: "Ingeniero de IA Industrial, Edge ML, Mantenimiento predictivo, Analítica industrial, Oil and Gas, FastAPI, Docker, LangGraph, Series de tiempo, Detección de anomalías",
-        ogTitle: "Jesús Caballero | Ingeniero de IA Industrial",
-        ogDescription: "Ingeniero de IA industrial que construye sistemas de ML listos para edge en mantenimiento predictivo, analítica industrial y entornos productivos orientados a OT.",
-        twitterTitle: "Jesús Caballero | Ingeniero de IA Industrial",
-        twitterDescription: "Ingeniero de IA industrial que construye sistemas de ML listos para edge en mantenimiento predictivo y analítica industrial."
+        title: "Jesús Caballero | Machine Learning Engineer",
+        description: "Machine Learning Engineer enfocado en sistemas AI/ML en producción que integran servicios backend, pipelines de datos, modelos ML, forecasting, detección de anomalías, agentes de IA, RAG, FastAPI, Docker y despliegue edge.",
+        keywords: "Machine Learning Engineer, AI Engineer, ML Systems, AI Applications, FastAPI, Docker, Data Pipelines, Time-Series Forecasting, Anomaly Detection, AI Agents, RAG, Edge Deployment",
+        ogTitle: "Jesús Caballero | Machine Learning Engineer",
+        ogDescription: "Machine Learning Engineer que construye sistemas AI/ML en producción con servicios backend, pipelines de datos, modelos ML, agentes de IA y despliegues edge.",
+        twitterTitle: "Jesús Caballero | Machine Learning Engineer",
+        twitterDescription: "Machine Learning Engineer enfocado en ML systems, AI applications, servicios backend, pipelines de datos, agentes y despliegues edge."
       },
     common: {
       skipLink: "Saltar al contenido",
@@ -347,7 +339,7 @@
       brand: {
         logoAlt: "Logo de Jesús Caballero",
         name: "Jesús Caballero",
-        role: "Ingeniero de IA Industrial",
+        role: "Machine Learning Engineer",
         homeAriaLabel: "Inicio de Jesús Caballero"
       },
       nav: {
@@ -355,9 +347,9 @@
         toggleLabel: "Alternar navegación"
       },
       hero: {
-        eyebrow: "IA industrial • Edge ML • Mantenimiento predictivo",
-        title: "Sistemas de IA industrial construidos para entornos operativos reales.",
-        lead: "Diseño y desarrollo soluciones de IA listas para edge en analítica industrial, monitoreo predictivo y sistemas de software orientados a OT. Mi trabajo conecta machine learning, ingeniería backend y restricciones de despliegue que los portafolios genéricos de ML suelen ignorar.",
+        eyebrow: "ML Systems • AI Applications • Edge Deployment",
+        title: "Sistemas AI/ML en producción, desde pipelines de datos hasta aplicaciones desplegadas.",
+        lead: "Construyo sistemas AI/ML orientados a producción que integran servicios backend, pipelines de datos, modelos de machine learning y despliegue edge.",
         buttons: {
           primary: "Ver proyecto destacado",
           secondary: "Descargar CV"
@@ -365,188 +357,179 @@
         links: ["LinkedIn", "GitHub", "Correo", "CV ES"],
         panel: {
           label: "Posicionamiento",
-          title: "Perfil híbrido entre IA, sistemas industriales, despliegue en edge y automatización.",
+          title: "Machine Learning Engineer enfocado en aplicaciones AI/ML desplegables, servicios backend y despliegue edge.",
           bullets: [
-            "Ingeniero de IA industrial con ownership end-to-end.",
-            "Monitoreo predictivo para bombas, compresores y flujos de salud de activos.",
-            "FastAPI, Docker/Podman, despliegue ARM en edge y ejecución orientada a OT.",
-            "Herramientas agénticas basadas en LangGraph para razonamiento sobre datasets industriales."
+            "Aplicaciones AI/ML que integran pipelines de datos, modelos, APIs y dashboards interactivos.",
+            "Análisis de series temporales, forecasting, detección de anomalías, readiness validation y modelado base.",
+            "Servicios backend con FastAPI, contenedores Docker/Podman y despliegue edge basado en ARM.",
+            "Agentes de IA y recuperación de contexto local para análisis de datasets técnicos y operacionales."
           ],
           metrics: [
             {
-              title: "Edge ML",
-              description: "Listo para ARM, entornos restringidos y operación continua"
+              title: "ML Systems",
+              description: "Pipelines de datos, modelos ML, artefactos y ejecución reproducible"
             },
             {
-              title: "Analítica industrial",
-              description: "Series de tiempo, detección de anomalías y métricas de salud y eficiencia"
+              title: "AI Applications",
+              description: "APIs backend, agentes de IA, flujos RAG y dashboards"
             },
             {
-              title: "Liderazgo técnico",
-              description: "Decisiones de arquitectura, mentoría y demos técnicas"
+              title: "Edge Deployment",
+              description: "Servicios dockerizados, objetivos ARM y entornos restringidos"
             }
           ]
         }
       },
       about: {
         eyebrow: "Sobre mí",
-        title: "No soy un científico de datos genérico, ni solo un ingeniero de software.",
+        title: "Machine Learning Engineer enfocado en sistemas AI/ML en producción.",
         paragraphs: [
-          "Soy un Ingeniero de IA Industrial con experiencia en el diseño de sistemas de machine learning para mantenimiento predictivo y monitoreo de activos industriales, con un fuerte enfoque en la realidad del despliegue. Mi trabajo abarca desarrollo de modelos, servicios backend, visualización industrial y ejecución en edge en entornos donde la confiabilidad importa tanto como la calidad del modelo.",
-          "Me desenvuelvo con soltura entre analítica industrial, implementación backend, despliegue orientado a OT, sistemas embebidos y toma de decisiones técnicas. Esa combinación me permite pasar de la lógica de datos y modelado industrial a sistemas listos para producción que resultan prácticos en campo."
+          "Desarrollo sistemas de inteligencia artificial y machine learning orientados a producción, construyendo aplicaciones end-to-end que integran servicios backend, pipelines de datos, modelos ML y despliegue edge. Mi experiencia incluye forecasting, detección de anomalías, análisis de series temporales, aplicaciones con FastAPI, despliegues con Docker/Podman, agentes de IA y flujos RAG locales.",
+          "Mi formación en ingeniería industrial y mecatrónica aporta contexto práctico para diseñar sistemas que operan bajo restricciones reales de conectividad, infraestructura y confiabilidad. Mantengo el foco en ML systems, aplicaciones de IA y despliegue orientado a producción."
         ],
         pills: [
-          "Mantenimiento predictivo",
-          "Monitoreo de activos industriales",
-          "Entornos Oil & Gas",
+          "ML Systems",
+          "AI Applications",
+          "Pipelines de datos",
           "Sistemas FastAPI",
           "Docker / Podman",
-          "Agentes con LangGraph",
-          "ESP32 / Arduino"
+          "Agentes de IA / RAG",
+          "Edge Deployment"
         ]
       },
       experience: {
         eyebrow: "Experiencia",
-        title: "Experiencia pública y segura enfocada en capacidades, arquitectura y operación confiable.",
+        title: "Experiencia construyendo aplicaciones AI/ML, servicios backend y despliegues edge.",
         roles: [
           {
-            role: "Ingeniero de IA Industrial / Control",
+            role: "Ingeniero de Analítica de Datos",
             company: "Proctek S.A.",
             date: "Marzo 2024 - Actualidad",
-            summary: "Lidero el diseño técnico de sistemas de IA industrial para mantenimiento predictivo y monitoreo de activos en entornos productivos.",
+            summary: "Lidero el diseño y desarrollo de aplicaciones de inteligencia artificial y machine learning para análisis de series temporales, detección de anomalías, forecasting y despliegue en producción.",
             bullets: [
-              "Desarrollo aplicaciones end-to-end que combinan servicios FastAPI, pipelines de machine learning, dashboards industriales y despliegue en edge.",
-              "Diseño flujos de monitoreo predictivo para bombas y compresores, incluyendo detección de anomalías, pronóstico y métricas de salud de activos.",
-              "Despliego y adapto soluciones para objetivos edge industriales que operan bajo restricciones de conectividad y requerimientos operativos.",
-              "Apoyo la toma de decisiones técnicas, la mentoría de ingenieros junior y la validación y demostración técnica de soluciones."
+              "Desarrollo sistemas end-to-end que integran servicios backend con FastAPI, pipelines de datos, modelos de machine learning y dashboards interactivos para monitoreo y analítica.",
+              "Implemento funcionalidades ML como métricas de salud de activos, detección de anomalías, forecasting multivariable y procesamiento de series temporales para aplicaciones desplegadas en producción.",
+              "Diseño arquitecturas de inferencia y despliegue para aplicaciones de IA con Docker/Podman sobre dispositivos edge ARM con requisitos de conectividad limitada.",
+              "Defino decisiones técnicas de arquitectura, estándares de desarrollo y estrategias de despliegue para aplicaciones AI/ML, además de participar en agentes de IA con orquestación de herramientas y recuperación de contexto local."
             ]
           },
           {
             role: "Ingeniero Mecatrónico",
             company: "Quynza Technologies",
             date: "Marzo 2022 - Enero 2024",
-            summary: "Trabajé en la frontera hardware-software para sistemas mecatrónicos industriales, construyendo una base sólida en control embebido, diseño HMI e integración práctica de sistemas.",
+            summary: "Trabajé en soluciones hardware-software para automatización, adquisición de datos, sistemas embebidos y contenidos técnicos de formación.",
             bullets: [
-              "Desarrollé soluciones embebidas con Arduino y ESP32 para control y adquisición de datos.",
-              "Contribuí a interfaces HMI industriales y documentación técnica para sistemas físicos.",
-              "Apoyé trabajo de ingeniería orientado a hardware, incluyendo integración relacionada con PCB y diseño de sistemas mecatrónicos."
+              "Desarrollé soluciones mecatrónicas integrando hardware y software para sistemas de automatización y adquisición de datos.",
+              "Programé sistemas embebidos basados en Arduino, ESP32 y MicroPython para aplicaciones IoT y control.",
+              "Contribuí a cursos técnicos sobre IoT, MicroPython y lógica digital, integrando contenidos interactivos dentro de la plataforma web de la empresa."
             ]
           }
         ]
       },
       skills: {
         eyebrow: "Habilidades y stack",
-        title: "Alcance técnico construido alrededor de IA industrial lista para despliegue.",
+        title: "Alcance técnico alineado con ML systems, backend AI, datos y despliegue edge.",
         groups: [
           {
-            title: "IA / ML",
+            title: "Machine Learning & AI",
             items: [
               "scikit-learn",
-              "Análisis de series de tiempo",
+              "Forecasting de series temporales",
               "Detección de anomalías",
-              "Pipelines de datos",
               "Ingeniería de características",
-              "Modelado base"
+              "AI agents",
+              "RAG"
             ]
           },
           {
-            title: "Backend",
+            title: "Backend y APIs",
             items: [
-              "Python",
               "FastAPI",
-              "Arquitecturas orientadas a API",
-              "Dashboards operativos",
-              "Flujos de integración técnica"
+              "APIs REST",
+              "Arquitecturas backend para sistemas de IA",
+              "Servicios backend",
+              "Integración de aplicaciones"
             ]
           },
           {
-            title: "Edge / Infraestructura",
+            title: "Infraestructura & Deployment",
             items: [
               "Docker",
               "Podman",
-              "Despliegue en ARM",
-              "Entornos restringidos",
-              "Diseño para operación continua"
+              "GitHub",
+              "Despliegue edge",
+              "Arquitecturas x86 / ARM"
             ]
           },
           {
-            title: "Industrial / OT",
+            title: "Datos",
             items: [
-              "Mantenimiento predictivo",
-              "Analítica industrial",
-              "Monitoreo de activos Oil & Gas",
-              "Conocimiento de PLC",
-              "Experiencia en SCADA e IIoT"
+              "pandas",
+              "NumPy",
+              "SQLite",
+              "Procesamiento de series temporales",
+              "Análisis tabular",
+              "Pipelines de datos"
             ]
           },
           {
-            title: "Embebidos / Hardware",
+            title: "Industrial & Edge Systems",
             items: [
+              "IIoT",
+              "ThingWorx",
               "ESP32",
-              "Arduino",
-              "Programación de microcontroladores",
-              "Control y adquisición de datos",
-              "Integración mecatrónica"
-            ]
-          },
-          {
-            title: "Liderazgo y comunicación",
-            items: [
-              "Arquitectura técnica",
-              "Mentoría a perfiles junior",
-              "Demos técnicas",
-              "Validación de soluciones",
-              "Colaboración transversal"
+              "PLCNext",
+              "Edge systems"
             ]
           }
         ]
       },
       project: {
-        eyebrow: "Proyecto destacado",
-        title: "Plataforma de readiness para datasets industriales",
-        summary: "Análisis determinístico y run-based de datasets, con modelado base para flujos de trabajo tabulares industriales y técnicos.",
-        description: "Este proyecto está diseñado como un sistema analítico estructurado, no como un chatbot genérico de IA. Combina un motor de análisis en Python, un backend FastAPI y una interfaz liviana para ejecutar diagnósticos trazables, chequeos de readiness y flujos de modelado base con salidas explícitas.",
-        details: [
+        eyebrow: "Proyectos",
+        title: "Proyectos AI/ML seleccionados",
+        summary: "Proyectos enfocados en forecasting, machine learning aplicado y desarrollo de plataformas para análisis y ejecución reproducible de flujos ML.",
+        projects: [
           {
-            title: "Problema",
-            text: "El trabajo inicial sobre datasets industriales suele depender en exceso de notebooks, ser inconsistente y quedar débilmente documentado, especialmente cuando la calidad de los datos, la estructura temporal, el riesgo de leakage o la readiness para modelado no están claros."
+            title: "Analítica predictiva y forecasting energético",
+            subtitle: "Forecasting y análisis de datos energéticos",
+            description: "Desarrollo de modelos predictivos y análisis temporal sobre datasets energéticos y tarifas eléctricas, combinando técnicas estadísticas y machine learning para explorar patrones, tendencias y capacidades de pronóstico sobre series temporales reales.",
+            highlights: [
+              "Forecasting sobre series temporales energéticas",
+              "Modelado estadístico y machine learning aplicado",
+              "Pipelines de preparación, análisis y evaluación de datos"
+            ],
+            tags: ["Python", "Forecasting", "Time Series", "SARIMAX", "Prophet"],
+            status: "Proyecto de análisis y modelado aplicado."
           },
           {
-            title: "Enfoque",
-            text: "Utiliza modos de análisis determinísticos, gating de readiness y artefactos por ejecución para que cada run genere salidas estructuradas en lugar de exploración ad hoc. Una capa conversacional restringida se apoya en el núcleo analítico en vez de reemplazarlo."
+            title: "Sistema de mantenimiento predictivo basado en IA",
+            subtitle: "Machine learning para monitoreo de activos",
+            description: "Desarrollo y evaluación de modelos para detección de anomalías, clasificación de estado y forecasting sobre datasets industriales multivariados, explorando técnicas tradicionales y arquitecturas de deep learning para análisis de series temporales.",
+            highlights: [
+              "Detección de anomalías y clasificación de estado",
+              "Análisis de sensores industriales multivariados",
+              "Evaluación de arquitecturas LSTM, Transformers y Autoencoders"
+            ],
+            tags: ["Anomaly Detection", "Forecasting", "LSTM", "Transformers", "Autoencoders"],
+            status: "Proyecto de investigación y desarrollo aplicado."
           },
           {
-            title: "Valor técnico",
-            text: "El sistema enfatiza semántica de ejecución explícita, historial reproducible por run, flujos analíticos orientados por artefactos e integración práctica backend/frontend para análisis de ML explicable."
+            title: "Plataforma de análisis ML y ejecución de pipelines IA",
+            subtitle: "ML Dataset Readiness Platform",
+            description: "Plataforma diseñada para análisis estructurado de datasets tabulares y de series temporales, combinando validación de readiness, feature engineering y ejecución reproducible de pipelines ML mediante una arquitectura backend basada en FastAPI.",
+            highlights: [
+              "Readiness validation y feature engineering",
+              "Ejecución reproducible de pipelines basada en artefactos",
+              "Capacidades opcionales de AI Agents y RAG"
+            ],
+            tags: ["Python", "FastAPI", "ML Pipelines", "RAG", "AI Agents"],
+            status: "Proyecto activo en evolución."
           }
-        ],
-        framingLabel: "Marco técnico",
-        framing: [
-          "Plataforma determinística de análisis de datasets",
-          "Sistema run-based de flujo de trabajo de ML",
-          "Ejecución analítica guiada por artefactos",
-          "Sesgo hacia datasets industriales y de series de tiempo"
-        ],
-        stackLabel: "Stack técnico",
-        stack: [
-          "Python",
-          "FastAPI",
-          "Vanilla JS",
-          "Artefactos por ejecución",
-          "Modelado base",
-          "Gating de readiness",
-          "Capas opcionales de LLM / RAG"
-        ],
-        statusLabel: "Estado público actual",
-        status: [
-          "La documentación pública está en preparación.",
-          "La demo pública aún no está publicada.",
-          "No se muestra un repositorio público hasta que el paquete publicable esté listo."
         ]
       },
       future: {
         eyebrow: "Portafolio futuro",
-        title: "Construyendo el portafolio público de forma progresiva y selectiva.",
+        title: "Construyendo el portafolio público con trabajo AI/ML publicable.",
         cards: [
           {
             title: "Más proyectos públicos próximamente",
@@ -554,23 +537,24 @@
           },
           {
             title: "Notas técnicas en preparación",
-            text: "El material público planificado puede incluir notas de arquitectura, aprendizajes de despliegue en edge y writeups de flujos de IA industrial."
+            text: "El material público planificado puede incluir notas de arquitectura, aprendizajes de despliegue edge, flujos de agentes de IA y writeups de ML systems."
           },
           {
-            title: "Diseñado para crecer",
-            text: "La estructura del sitio está lista para futuras páginas de proyecto, enlaces a documentación, capturas o un flujo de contacto ligero con serverless."
+            title: "Diseñado para adiciones selectivas",
+            text: "El sitio puede incluir más adelante páginas de proyecto, enlaces a documentación, capturas o mejoras ligeras de contacto cuando el material público esté listo."
           }
         ]
       },
       education: {
         education: {
           eyebrow: "Educación",
-          title: "Base académica en automatización y mecatrónica.",
+          title: "Base académica en automatización, mecatrónica e ingeniería aplicada.",
           items: [
             {
               title: "Maestría en Ingeniería de Automatización Industrial",
               institution: "Universidad Nacional de Colombia, Bogotá",
-              years: "2023 - 2025"
+              years: "2023 - 2025",
+              description: "Tesis enfocada en analítica predictiva y modelado de activos industriales mediante software AI/ML aplicado a Oil & Gas."
             },
             {
               title: "Ingeniería Mecatrónica",
@@ -581,7 +565,7 @@
         },
         certifications: {
           eyebrow: "Certificaciones",
-          title: "Certificaciones recientes alineadas con ML y sistemas digitales industriales.",
+          title: "Certificaciones recientes alineadas con ML, ciencia de datos, IoT y sistemas aplicados.",
           items: [
             {
               title: "IBM Machine Learning Professional Certificate",
@@ -612,7 +596,7 @@
       },
       honors: {
         eyebrow: "Distinciones",
-        title: "Distinciones académicas presentadas con sobriedad y credibilidad.",
+        title: "Distinciones y reconocimientos académicos.",
         items: [
           {
             title: "Reconocimiento nacional - Examen Saber Pro",
@@ -630,7 +614,7 @@
       },
       contact: {
         eyebrow: "Contacto",
-        title: "Abierto a conversaciones técnicas, oportunidades de ingeniería y colaboración.",
+        title: "Abierto a oportunidades en AI Engineering, Machine Learning Engineering y sistemas backend para aplicaciones de IA.",
         text: "Con base en Bogotá, Colombia. La forma más rápida de contactarme es por correo o LinkedIn.",
         portraitAlt: "Retrato de Jesús Caballero",
         actions: [
@@ -641,7 +625,7 @@
       },
       footer: {
         name: "Jesús Daniel Caballero Colina",
-        tagline: "Ingeniero de IA Industrial • Sistemas de Edge ML • Mantenimiento predictivo"
+        tagline: "Machine Learning Engineer • ML Systems • AI Applications • Edge Deployment"
       }
     }
   };

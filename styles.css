@@ -408,6 +408,7 @@ ul {
 .timeline-card,
 .skill-card,
 .project-card,
+.project-item,
 .future-card,
 .info-card,
 .honor-card,
@@ -571,10 +572,13 @@ ul {
 
 .project-card {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
   gap: 1.5rem;
   border-radius: var(--radius-lg);
   padding: 1.6rem;
+}
+
+.project-card--legacy {
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
 }
 
 .project-copy {
@@ -586,6 +590,33 @@ ul {
   max-width: 44rem;
   color: var(--text);
   font-weight: 500;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-item {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+
+.project-item-copy {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.project-kicker,
+.project-status {
+  margin: 0;
+  color: var(--accent-strong);
+  font-size: 0.86rem;
+  font-weight: 600;
 }
 
 .project-detail-grid {
@@ -723,6 +754,8 @@ button:focus-visible {
   .section-grid,
   .two-column,
   .project-card,
+  .project-grid,
+  .project-card--legacy,
   .project-detail-grid,
   .contact-card,
   .timeline-card,

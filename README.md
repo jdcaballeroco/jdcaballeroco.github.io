@@ -1,6 +1,6 @@
 # Jesús Caballero Portfolio
 
-Static professional portfolio for GitHub Pages and Live Server, focused on Industrial AI, Edge ML, predictive maintenance, and industrial analytics.
+Static professional portfolio for GitHub Pages and Live Server, focused on Machine Learning Engineering, ML systems, AI applications, backend AI services, data pipelines, AI agents, RAG workflows, and edge deployment.
 
 ## Structure
 
@@ -10,14 +10,13 @@ styles.css
 script.js
 assets/
   docs/
-    CV_JesusCaballero_EN.pdf
-    CV_JesusCaballero_ES.pdf
+    CV_IA_JesusCaballero_EN.pdf
+    CV_IA_JesusCaballero_ES.pdf
   icons/
-    favicon.png
+    favicon.ico
   imgs/
 docs/
   index.html
-proyectos/
 scripts/
 ```
 

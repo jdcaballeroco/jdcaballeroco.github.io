@@ -386,43 +386,77 @@ function applyLanguage(language) {
 
   const projectSection = document.querySelector("#project .project-card");
   if (projectSection) {
-    projectSection.innerHTML = `
-      <div class="project-copy">
-        <p class="eyebrow">${escapeHtml(content.project.eyebrow)}</p>
-        <h2>${escapeHtml(content.project.title)}</h2>
-        <p class="project-summary">${escapeHtml(content.project.summary)}</p>
-        <p>${escapeHtml(content.project.description)}</p>
-        <div class="project-detail-grid">
+    if (Array.isArray(content.project.projects) && content.project.projects.length > 0) {
+      projectSection.classList.remove("project-card--legacy");
+      projectSection.innerHTML = `
+        <div class="project-copy">
+          <p class="eyebrow">${escapeHtml(content.project.eyebrow)}</p>
+          <h2>${escapeHtml(content.project.title)}</h2>
+          <p class="project-summary">${escapeHtml(content.project.summary)}</p>
+        </div>
+
+        <div class="project-grid">
           ${renderList(
-            content.project.details,
-            (detail) => `
-              <article class="project-detail">
-                <h3>${escapeHtml(detail.title)}</h3>
-                <p>${escapeHtml(detail.text)}</p>
+            content.project.projects,
+            (project) => `
+              <article class="project-item">
+                <div class="project-item-copy">
+                  ${project.subtitle ? `<p class="project-kicker">${escapeHtml(project.subtitle)}</p>` : ""}
+                  <h3>${escapeHtml(project.title)}</h3>
+                  ${project.description ? `<p>${escapeHtml(project.description)}</p>` : ""}
+                </div>
+                <ul class="project-facets">
+                  ${renderList(project.highlights || [], (item) => `<li>${escapeHtml(item)}</li>`)}
+                </ul>
+                <div class="pill-row">
+                  ${renderList(project.tags || [], (tag) => `<span>${escapeHtml(tag)}</span>`)}
+                </div>
+                ${project.status ? `<p class="project-status">${escapeHtml(project.status)}</p>` : ""}
               </article>
             `
           )}
         </div>
-      </div>
-      <div class="project-side">
-        <div class="stack-card">
-          <p class="stack-title">${escapeHtml(content.project.framingLabel)}</p>
-          <ul class="project-facets">
-            ${renderList(content.project.framing, (item) => `<li>${escapeHtml(item)}</li>`)}
-          </ul>
-        </div>
-        <div class="stack-card">
-          <p class="stack-title">${escapeHtml(content.project.stackLabel)}</p>
-          <div class="pill-row">
-            ${renderList(content.project.stack, (item) => `<span>${escapeHtml(item)}</span>`)}
+      `;
+    } else {
+      projectSection.classList.add("project-card--legacy");
+      projectSection.innerHTML = `
+        <div class="project-copy">
+          <p class="eyebrow">${escapeHtml(content.project.eyebrow)}</p>
+          <h2>${escapeHtml(content.project.title)}</h2>
+          <p class="project-summary">${escapeHtml(content.project.summary)}</p>
+          <p>${escapeHtml(content.project.description)}</p>
+          <div class="project-detail-grid">
+            ${renderList(
+              content.project.details || [],
+              (detail) => `
+                <article class="project-detail">
+                  <h3>${escapeHtml(detail.title)}</h3>
+                  <p>${escapeHtml(detail.text)}</p>
+                </article>
+              `
+            )}
           </div>
         </div>
-        <div class="placeholder-card">
-          <p class="stack-title">${escapeHtml(content.project.statusLabel)}</p>
-          ${renderList(content.project.status, (item) => `<p>${escapeHtml(item)}</p>`)}
+        <div class="project-side">
+          <div class="stack-card">
+            <p class="stack-title">${escapeHtml(content.project.framingLabel)}</p>
+            <ul class="project-facets">
+              ${renderList(content.project.framing || [], (item) => `<li>${escapeHtml(item)}</li>`)}
+            </ul>
+          </div>
+          <div class="stack-card">
+            <p class="stack-title">${escapeHtml(content.project.stackLabel)}</p>
+            <div class="pill-row">
+              ${renderList(content.project.stack || [], (item) => `<span>${escapeHtml(item)}</span>`)}
+            </div>
+          </div>
+          <div class="placeholder-card">
+            <p class="stack-title">${escapeHtml(content.project.statusLabel)}</p>
+            ${renderList(content.project.status || [], (item) => `<p>${escapeHtml(item)}</p>`)}
+          </div>
         </div>
-      </div>
-    `;
+      `;
+    }
   }
 
   const futureSection = document.querySelector("#future");
@@ -468,6 +502,7 @@ function applyLanguage(language) {
                 <h3>${escapeHtml(item.title)}</h3>
                 <p>${escapeHtml(item.institution)}</p>
                 <p>${escapeHtml(item.years)}</p>
+                ${item.description ? `<p class="education-description">${escapeHtml(item.description)}</p>` : ""}
               </article>
             `
           )}
