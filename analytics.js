@@ -171,6 +171,107 @@ function setupEventTracking() {
         });
 }
 
+function setupScrollDepthTracking() {
+    const thresholds = [
+        { percent: 25, target: "scroll_25" },
+        { percent: 50, target: "scroll_50" },
+        { percent: 75, target: "scroll_75" },
+        { percent: 100, target: "scroll_100" }
+    ];
+    const trackedThresholds = new Set();
+    let scrollFrame = null;
+
+    function checkScrollDepth() {
+        scrollFrame = null;
+
+        const documentElement = document.documentElement;
+        const body = document.body;
+        const scrollHeight = Math.max(
+            documentElement.scrollHeight,
+            body ? body.scrollHeight : 0
+        );
+        const viewportHeight =
+            window.innerHeight ||
+            documentElement.clientHeight;
+        const maxScroll =
+            scrollHeight - viewportHeight;
+
+        if (maxScroll <= 0) {
+            return;
+        }
+
+        const scrollTop =
+            window.scrollY ||
+            documentElement.scrollTop ||
+            0;
+        const scrollPercent = Math.min(
+            100,
+            Math.round((scrollTop / maxScroll) * 100)
+        );
+
+        thresholds.forEach(({ percent, target }) => {
+            if (
+                scrollPercent >= percent &&
+                !trackedThresholds.has(percent)
+            ) {
+                trackedThresholds.add(percent);
+                trackEvent("scroll_depth", target);
+            }
+        });
+
+        if (trackedThresholds.size === thresholds.length) {
+            window.removeEventListener(
+                "scroll",
+                scheduleScrollDepthCheck
+            );
+            window.removeEventListener(
+                "resize",
+                scheduleScrollDepthCheck
+            );
+        }
+    }
+
+    function scheduleScrollDepthCheck() {
+        if (scrollFrame !== null) {
+            return;
+        }
+
+        scrollFrame = window.requestAnimationFrame(
+            checkScrollDepth
+        );
+    }
+
+    window.addEventListener(
+        "scroll",
+        scheduleScrollDepthCheck,
+        { passive: true }
+    );
+    window.addEventListener(
+        "resize",
+        scheduleScrollDepthCheck
+    );
+
+    scheduleScrollDepthCheck();
+}
+
+function setupEngagementTimeTracking() {
+    [
+        { delay: 30 * 1000, target: "time_30s" },
+        { delay: 60 * 1000, target: "time_60s" },
+        { delay: 120 * 1000, target: "time_120s" }
+    ].forEach(({ delay, target }) => {
+        window.setTimeout(
+            () => {
+                trackEvent(
+                    "engagement_time",
+                    target
+                );
+            },
+            delay
+        );
+    });
+}
+
 document.addEventListener(
     "DOMContentLoaded",
     () => {
@@ -179,5 +280,7 @@ document.addEventListener(
         }
 
         setupEventTracking();
+        setupScrollDepthTracking();
+        setupEngagementTimeTracking();
     }
 );
