@@ -8,6 +8,7 @@ Static professional portfolio for GitHub Pages and Live Server, focused on Machi
 index.html
 styles.css
 script.js
+analytics.js
 assets/
   docs/
     CV_IA_JesusCaballero_EN.pdf
